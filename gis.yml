@@ -1,6 +1,6 @@
 ---
 - name: GIS
-  hosts: gis1
+  hosts: gis
   become: yes
   vars_files:
     - proxy.yml
