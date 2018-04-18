@@ -36,3 +36,8 @@ Ansible Playbook for GIS Application
     and mapcache.
   - The glassfish has JDBC Connection pool to the PostGIS server. See management
     console https://localhost:14848 (for Vagrant ) or https://server:4848/.
+    
+    
+
+- notice
+  you must use ansible over 2.4
