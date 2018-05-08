@@ -4,8 +4,8 @@
 Vagrant.configure(2) do |config|
   config.vm.box = "centos/7"
   config.vm.box_url = "https://app.vagrantup.com/centos/boxes/7"
-  config.proxy.http = ""
-  config.proxy.https = ""
+  config.proxy.http = "http://<username>:<password>@<proxy_url>"
+  config.proxy.https = "https://<username>:<password>@<proxy_url>"
   config.proxy.no_proxy = "localhost,127.0.0.1" 
   config.vm.provider "virtualbox" do |vb|
     vb.cpus = 2
