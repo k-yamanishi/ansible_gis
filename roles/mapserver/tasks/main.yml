@@ -33,7 +33,8 @@
   yum: name="{{ item }}-devel" state=present
   with_items:
     - python
-    - java-1.8.0-openjdk
+#    - java-1.8.0-openjdk
+    - java-1.8.0-amazon-corretto
     - httpd
     # Required External Libraries
     - libpng
@@ -41,7 +42,7 @@
     - libjpeg
     - libgeotiff
     - zlib
-    # Highly Recommended Libraries¶
+    # Highly Recommended Librariesﾂｶ
     - proj
     # - proj-epsg
     - libcurl
@@ -141,6 +142,8 @@
   git:
     repo=https://github.com/mapserver/mapcache.git
     dest="{{ src_dir }}/mapcache"
+    version="rel-1-6-1"
+    force=yes
 
 - name: Create work directory for building mapcache
   file: path={{ src_dir }}/mapcache/build state=directory
