@@ -8,6 +8,7 @@
   roles:
     - ../ansible_common/common
     - { role: postgis, db_name: gis, db_passwd: password }
+    - ../ansible_common/java
     - mapserver
     - ../ansible_common/maven
     - ../ansible_common/tomcat

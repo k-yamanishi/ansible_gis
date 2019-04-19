@@ -11,3 +11,5 @@ proxy_env :
   no_proxy: 127.0.0.1,localhost
   http_proxy: "{{ http_proxy | default(None) }}"
   https_proxy: "{{ http_proxy | default(None) }}"
+  HTTP_PROXY: "{{ http_proxy | default(None) }}"
+  HTTPS_PROXY: "{{ http_proxy | default(None) }}"

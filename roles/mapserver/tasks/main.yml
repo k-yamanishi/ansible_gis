@@ -34,7 +34,7 @@
   with_items:
     - python
 #    - java-1.8.0-openjdk
-    - java-1.8.0-amazon-corretto
+#    - java-1.8.0-amazon-corretto
     - httpd
     # Required External Libraries
     - libpng
@@ -42,7 +42,7 @@
     - libjpeg
     - libgeotiff
     - zlib
-    # Highly Recommended Librariesﾂｶ
+    # Highly Recommended Libraries・ゑｽｶ
     - proj
     # - proj-epsg
     - libcurl
