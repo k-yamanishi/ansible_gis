@@ -175,8 +175,10 @@
     dest: /etc/httpd/conf.d
 
 - copy:
-    remote_src: True
-    src: /usr/local/src/mapcache/mapcache.xml
+#    2020.1.7 modified
+#    remote_src: True
+#    src: /usr/local/src/mapcache/mapcache.xml
+    src: mapcache.xml
     dest: /opt/mapcache/mapcache.xml
 
 ##########
